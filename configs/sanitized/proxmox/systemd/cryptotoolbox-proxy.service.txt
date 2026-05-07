@@ -1,0 +1,17 @@
+# /etc/systemd/system/cryptotoolbox-proxy.service
+[Unit]
+Description=CryptoToolbox local forward to HA virtual IP
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/socat TCP-LISTEN:3000,bind=127.0.0.1,fork,reuseaddr TCP:192.168.200.30:3300
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target

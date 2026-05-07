@@ -1,4 +1,4 @@
-# Captured: 2026-05-07T00:38:21Z
+# Captured: 2026-05-07T05:30:08Z
 # Command: systemctl cat wazuh-api-forward.service
 
 # /etc/systemd/system/wazuh-api-forward.service

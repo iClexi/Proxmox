@@ -10,6 +10,7 @@ Fuente: [`inventory/proxmox/listening-ports.txt`](../inventory/proxmox/listening
 | `cloudflared-portfolio.service` | N/A | Tunel | Expone `iclexi.tech` |
 | `ppt-terror-proxy.service` | 1311 | `127.0.0.1` | Forward a VIP HA `192.168.200.30:1311` |
 | `ppt-terror.service` | 1311 | VMs 201/202 | App PPT del Terror con login y dashboard |
+| `cryptotoolbox-proxy.service` | 3000 | `127.0.0.1` | Forward a VIP HA `192.168.200.30:3300` para `cryptotoolbox.iclexi.tech` |
 
 ## Servicios existentes destacados
 

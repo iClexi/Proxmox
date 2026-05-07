@@ -1,4 +1,4 @@
-# Captured: 2026-05-07T00:38:21Z
+# Captured: 2026-05-07T05:30:08Z
 # Command: systemctl list-unit-files --state=enabled --no-pager
 
 UNIT FILE                              STATE   PRESET
@@ -10,6 +10,7 @@ cloudflared.service                    enabled enabled
 console-setup.service                  enabled enabled
 corosync.service                       enabled enabled
 cron.service                           enabled enabled
+cryptotoolbox-proxy.service            enabled enabled
 e2scrub_reap.service                   enabled enabled
 getty@.service                         enabled enabled
 grub-common.service                    enabled enabled
@@ -106,4 +107,4 @@ man-db.timer                           enabled enabled
 pve-daily-update.timer                 enabled enabled
 xfs_scrub_all.timer                    enabled enabled
 
-103 unit files listed.
+104 unit files listed.

@@ -6,9 +6,11 @@
 - La app de terror usa PostgreSQL con base y usuario dedicados.
 - `iclexi.tech` escucha solo en `127.0.0.1:9023`; el acceso publico pasa por Cloudflare Tunnel.
 - `ppt-terror-proxy.service` escucha solo en `127.0.0.1:1311`.
+- `cryptotoolbox-proxy.service` escucha solo en `127.0.0.1:3000` y reenvia al VIP HA `192.168.200.30:3300`.
+- Las paginas publicas principales usan CSP, HSTS, `X-Frame-Options: DENY` y `X-Content-Type-Options: nosniff`.
 - El token del `cloudflared.service` principal fue movido a `/etc/cloudflared/token.env` con permisos `0600`.
 - Repositorios generados no incluyen `.env`, tokens, claves privadas ni credenciales.
-- `npm audit` limpio en dependencias de produccion de `PPT-Del-terror` y completo en `Portfolio`.
+- `npm audit` limpio en dependencias de `Portfolio`, `PPT-Del-terror`, `RitmoHub` y `CryptoToolbox`.
 
 ## Hallazgos y recomendaciones
 
@@ -23,7 +25,7 @@
 ## Comandos utiles
 
 ```bash
-systemctl status cloudflared cloudflared-portfolio portfolio ppt-terror-proxy
+systemctl status cloudflared cloudflared-portfolio portfolio ppt-terror-proxy cryptotoolbox-proxy
 qm list
 pvesm status
 ss -tulpn

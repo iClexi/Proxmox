@@ -1,6 +1,6 @@
-# Captured: 2026-05-07T00:38:21Z
+# Captured: 2026-05-07T05:30:08Z
 # Command: pvesm status
 
 Name             Type     Status     Total (KiB)      Used (KiB) Available (KiB)        %
-local             dir     active        72544256        21278120        51266136   29.33%
-local-lvm     lvmthin     active       147714048       131672302        16041745   89.14%
+local             dir     active        72544256        21767984        50776272   30.01%
+local-lvm     lvmthin     active       147714048       132957414        14756633   90.01%

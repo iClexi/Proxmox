@@ -59,6 +59,7 @@ for service in \
   cloudflared-portfolio.service \
   portfolio.service \
   ppt-terror-proxy.service \
+  cryptotoolbox-proxy.service \
   ha-web-proxy.service \
   ritmohub-proxy.service \
   minecraft-socat.service \

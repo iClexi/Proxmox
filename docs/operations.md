@@ -6,8 +6,10 @@
 qm list
 pvesm status
 systemctl status cloudflared cloudflared-portfolio portfolio ppt-terror-proxy
+systemctl status cryptotoolbox-proxy
 curl -I https://iclexi.tech
 curl -I https://terror.iclexi.tech
+curl -I https://cryptotoolbox.iclexi.tech
 ```
 
 ## Reiniciar portafolio
@@ -30,6 +32,21 @@ En VMs 201 y 202:
 ```bash
 ssh -i /root/.ssh/autonomous_infra_ed25519 infra@192.168.200.21 'sudo systemctl restart ppt-terror.service'
 ssh -i /root/.ssh/autonomous_infra_ed25519 infra@192.168.200.22 'sudo systemctl restart ppt-terror.service'
+```
+
+## Reiniciar CryptoToolbox
+
+En Proxmox:
+
+```bash
+systemctl restart cryptotoolbox-proxy.service
+```
+
+En VMs 201 y 202:
+
+```bash
+ssh -i /root/.ssh/autonomous_infra_ed25519 infra@192.168.200.21 'sudo systemctl restart cryptotoolbox.service'
+ssh -i /root/.ssh/autonomous_infra_ed25519 infra@192.168.200.22 'sudo systemctl restart cryptotoolbox.service'
 ```
 
 ## Recolectar documentacion actualizada
