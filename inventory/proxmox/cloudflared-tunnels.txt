@@ -1,0 +1,7 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: cloudflared tunnel list
+
+You can obtain more detailed information for each tunnel with `cloudflared tunnel info <name/uuid>`
+ID                                   NAME           CREATED              CONNECTIONS                        
+ef12e405-3e22-4d74-80c9-3c26f7235e98 portfolio-root 2026-05-07T00:26:48Z 1xatl01, 1xatl08, 1xatl11, 1xatl12 
+2f746be5-af85-4e6d-bf07-72ef09bdd4f9 pve-lab        2026-04-29T16:40:19Z 2xatl12, 1xatl13, 1xatl15          

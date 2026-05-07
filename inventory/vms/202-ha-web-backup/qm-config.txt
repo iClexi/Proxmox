@@ -1,0 +1,25 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm config 202
+
+agent: enabled=1
+boot: order=scsi0
+ciuser: infra
+cores: 1
+cpu: host
+ide2: local-lvm:vm-202-cloudinit,media=cdrom
+ipconfig0: ip=192.168.200.22/24,gw=192.168.200.1
+memory: 1024
+meta: creation-qemu=10.1.2,ctime=1777443461
+name: ha-web-backup
+nameserver: 1.1.1.1
+net0: virtio=BC:24:11:8C:EE:65,bridge=vmbr1
+ostype: l26
+parent: antes-reset-pass-2026-05-03
+scsi0: local-lvm:vm-202-disk-0,size=13G
+scsihw: virtio-scsi-pci
+serial0: socket
+smbios1: uuid=6d9689fe-4d76-4e73-8d40-aec831e36d92
+sshkeys: [REDACTED_PUBLIC_KEY]
+tags: debian-13
+vga: serial0
+vmgenid: e6a2e401-b929-4b2a-89f4-41ff71ce1b5a

@@ -1,0 +1,16 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: systemctl cat minecraft-bedrock-socat.service
+
+# /etc/systemd/system/minecraft-bedrock-socat.service
+[Unit]
+Description=Minecraft Bedrock UDP Forward to VM
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/socat -T60 UDP4-LISTEN:19132,fork,reuseaddr,bind=0.0.0.0 UDP4:192.168.200.15:19132
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

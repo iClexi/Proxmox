@@ -1,0 +1,29 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: sed -n 1\,220p /etc/network/interfaces
+
+auto lo
+iface lo inet loopback
+
+# WiFi uplink — DO NOT bridge this
+auto wlp0s20f3
+iface wlp0s20f3 inet dhcp
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+# vmbr0 — WAN bridge (no physical port, routes to WiFi via NAT)
+auto vmbr0
+iface vmbr0 inet static
+    address 10.10.10.1/24
+    bridge-ports none
+    bridge-stp off
+    bridge-fd 0
+    post-up   echo 1 > /proc/sys/net/ipv4/ip_forward
+    post-up   iptables -t nat -A POSTROUTING -s '10.10.10.0/24' -o wlp0s20f3 -j MASQUERADE
+    post-down iptables -t nat -D POSTROUTING -s '10.10.10.0/24' -o wlp0s20f3 -j MASQUERADE
+
+# vmbr1 — LAN bridge (internal only)
+auto vmbr1
+iface vmbr1 inet static
+    address 192.168.200.1/24
+    bridge-ports none
+    bridge-stp off
+    bridge-fd 0

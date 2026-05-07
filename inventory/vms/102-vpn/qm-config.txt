@@ -1,0 +1,20 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm config 102
+
+agent: enabled=1
+boot: order=scsi0;ide2;net0
+cores: 1
+cpu: x86-64-v2-AES
+ide2: none,media=cdrom
+memory: 2048
+meta: creation-qemu=10.1.2,ctime=1777991882
+name: vpn
+net0: virtio=BC:24:11:8E:E9:38,bridge=vmbr1,firewall=1
+numa: 0
+ostype: l26
+scsi0: local-lvm:vm-102-disk-0,iothread=1,size=25G
+scsihw: virtio-scsi-single
+smbios1: uuid=8719b5ec-5949-4385-8f38-ee5d3f36a337
+sockets: 1
+tags: ubuntu-server-26
+vmgenid: 51f70b13-0c0c-42f7-8e19-db916bfcdf57

@@ -1,0 +1,9 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm guest exec 102 -- hostname
+
+{
+   "exitcode" : 0,
+   "exited" : 1,
+   "out-data" : "vpn\n",
+   "out-truncated" : 0
+}

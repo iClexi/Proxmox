@@ -1,0 +1,9 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm guest exec 201 -- ip -4 addr show
+
+{
+   "exitcode" : 0,
+   "exited" : 1,
+   "out-data" : "1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000\n    inet 127.0.0.1/8 scope host lo\n       valid_lft forever preferred_lft forever\n2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000\n    altname enp0s18\n    altname enxbc241114eae4\n    inet 192.168.200.21/24 brd 192.168.200.255 scope global eth0\n       valid_lft forever preferred_lft forever\n    inet 192.168.200.30/24 scope global secondary proto keepalived eth0\n       valid_lft forever preferred_lft forever\n",
+   "out-truncated" : 0
+}

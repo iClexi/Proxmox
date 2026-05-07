@@ -1,0 +1,21 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm config 103
+
+agent: enabled=1
+boot: order=scsi0;ide2;net0
+cores: 4
+cpu: x86-64-v2-AES
+ide2: none,media=cdrom
+memory: 12288
+meta: creation-qemu=10.1.2,ctime=1777999876
+name: wazuh
+net0: virtio=BC:24:11:F4:8F:02,bridge=vmbr1,firewall=1
+numa: 0
+onboot: 1
+ostype: l26
+scsi0: local-lvm:vm-103-disk-0,iothread=1,size=50G
+scsihw: virtio-scsi-single
+smbios1: uuid=8889d247-ff9e-4845-9d09-f5756f388cb9
+sockets: 1
+tags: ubuntu-server-26
+vmgenid: 16eb558d-acfd-4d7c-b425-c312f78d2e27

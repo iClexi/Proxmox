@@ -1,0 +1,17 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: systemctl cat proxy-http-forward.service
+
+# /etc/systemd/system/proxy-http-forward.service
+[Unit]
+Description=Forward HTTP 80 to proxy-01
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/socat TCP4-LISTEN:80,fork,reuseaddr,bind=192.168.68.112 TCP4:192.168.200.20:80
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

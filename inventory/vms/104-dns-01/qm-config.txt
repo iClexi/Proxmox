@@ -1,0 +1,21 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm config 104
+
+agent: enabled=1
+boot: order=scsi0
+cores: 1
+cpu: x86-64-v2-AES
+ide2: none,media=cdrom
+memory: 1024
+meta: creation-qemu=10.1.2,ctime=1778029602
+name: dns-01
+net0: virtio=BC:24:11:68:10:04,bridge=vmbr1,firewall=1
+onboot: 1
+ostype: l26
+scsi0: local-lvm:vm-104-disk-0,discard=on,iothread=1,size=12G
+scsihw: virtio-scsi-single
+serial0: socket
+smbios1: uuid=6f624d0a-347c-4f29-8bbb-2750ea26e4ec
+tags: ubuntu-server-26,dns
+vga: serial0
+vmgenid: 4acdbff0-034e-4982-be8c-20102ba93a38

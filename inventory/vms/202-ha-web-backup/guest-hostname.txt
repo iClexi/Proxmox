@@ -1,0 +1,9 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm guest exec 202 -- hostname
+
+{
+   "exitcode" : 0,
+   "exited" : 1,
+   "out-data" : "ha-web-backup\n",
+   "out-truncated" : 0
+}

@@ -1,0 +1,17 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: systemctl cat ha-web-proxy.service
+
+# /etc/systemd/system/ha-web-proxy.service
+[Unit]
+Description=HA Web TCP proxy to virtual IP
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/socat TCP-LISTEN:8080,fork,reuseaddr TCP:192.168.200.30:80
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

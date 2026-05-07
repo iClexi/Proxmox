@@ -1,0 +1,21 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm config 105
+
+agent: enabled=1
+boot: order=scsi0
+cores: 2
+cpu: x86-64-v2-AES
+ide2: none,media=cdrom
+memory: 2048
+meta: creation-qemu=10.1.2,ctime=1778029615
+name: proxy-01
+net0: virtio=BC:24:11:68:10:05,bridge=vmbr1,firewall=1
+onboot: 1
+ostype: l26
+scsi0: local-lvm:vm-105-disk-0,discard=on,iothread=1,size=20G
+scsihw: virtio-scsi-single
+serial0: socket
+smbios1: uuid=7eac0fc0-7c44-4b93-a542-00f5a65a095d
+tags: ubuntu-server-26,proxy
+vga: serial0
+vmgenid: e5ebfbc7-8470-4d7f-a773-c7a762e8127e

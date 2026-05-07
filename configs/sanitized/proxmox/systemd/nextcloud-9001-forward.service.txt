@@ -1,0 +1,17 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: systemctl cat nextcloud-9001-forward.service
+
+# /etc/systemd/system/nextcloud-9001-forward.service
+[Unit]
+Description=Forward Nextcloud 9001 to TrueNAS VM
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/socat TCP-LISTEN:9001,fork,reuseaddr,bind=0.0.0.0 TCP:192.168.200.12:9001
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

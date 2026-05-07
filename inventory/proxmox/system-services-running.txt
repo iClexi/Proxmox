@@ -1,0 +1,66 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: systemctl --type=service --state=running --no-pager
+
+  UNIT                             LOAD   ACTIVE SUB     DESCRIPTION
+  avahi-daemon.service             loaded active running Avahi mDNS/DNS-SD Stack
+  cloudflared-portfolio.service    loaded active running cloudflared portfolio root tunnel
+  cloudflared.service              loaded active running cloudflared
+  cron.service                     loaded active running Regular background program processing daemon
+  dbus.service                     loaded active running D-Bus System Message Bus
+  dm-event.service                 loaded active running Device-mapper event daemon
+  getty@tty1.service               loaded active running Getty on tty1
+  ha-web-proxy.service             loaded active running HA Web TCP proxy to virtual IP
+  issabel-proxy.service            loaded active running Issabel HTTPS proxy to VM 203
+  jellyfin-proxy.service           loaded active running Jellyfin TCP proxy to VM 204
+  ksmtuned.service                 loaded active running Kernel Samepage Merging (KSM) Tuning Daemon
+  lan-dns-cache.service            loaded active running LAN DNS cache for internal iclexi.tech records
+  lxc-monitord.service             loaded active running LXC Container Monitoring Daemon
+  lxcfs.service                    loaded active running FUSE filesystem for LXC
+  minecraft-bedrock-socat.service  loaded active running Minecraft Bedrock UDP Forward to VM
+  minecraft-socat.service          loaded active running Minecraft TCP Forward to VM
+  nextcloud-9001-forward.service   loaded active running Forward Nextcloud 9001 to TrueNAS VM
+  nfs-blkmap.service               loaded active running pNFS block layout mapping daemon
+  pfsense-proxy.service            loaded active running pfSense WebGUI Proxy
+  polkit.service                   loaded active running Authorization Manager
+  portfolio.service                loaded active running iClexi portfolio Next.js application
+  postfix.service                  loaded active running Postfix Mail Transport Agent (main/default instance)
+  postgresql@17-main.service       loaded active running PostgreSQL Cluster 17-main
+  ppt-terror-proxy.service         loaded active running PPT del Terror local forward to HA virtual IP
+  proxmox-firewall.service         loaded active running Proxmox nftables firewall
+  proxy-http-forward.service       loaded active running Forward HTTP 80 to proxy-01
+  proxy-https-forward.service      loaded active running Forward HTTPS 443 to proxy-01
+  pve-cluster.service              loaded active running The Proxmox VE cluster filesystem
+  pve-firewall.service             loaded active running Proxmox VE firewall
+  pve-ha-crm.service               loaded active running PVE Cluster HA Resource Manager Daemon
+  pve-ha-lrm.service               loaded active running PVE Local HA Resource Manager Daemon
+  pve-lxc-syscalld.service         loaded active running Proxmox VE LXC Syscall Daemon
+  pvedaemon.service                loaded active running PVE API Daemon
+  pvefw-logger.service             loaded active running Proxmox VE firewall logger
+  pveproxy.service                 loaded active running PVE API Proxy Server
+  pvescheduler.service             loaded active running Proxmox VE scheduler
+  pvestatd.service                 loaded active running PVE Status Daemon
+  qmeventd.service                 loaded active running PVE Qemu Event Daemon
+  ritmohub-proxy.service           loaded active running RitmoHub TCP proxy to HA web VIP
+  rpcbind.service                  loaded active running RPC bind portmap service
+  rrdcached.service                loaded active running Data caching daemon for rrdtool
+  smartmontools.service            loaded active running Self Monitoring and Reporting Technology (SMART) Daemon
+  spiceproxy.service               loaded active running PVE SPICE Proxy Server
+  ssh.service                      loaded active running OpenBSD Secure Shell server
+  systemd-journald.service         loaded active running Journal Service
+  systemd-logind.service           loaded active running User Login Management
+  systemd-timesyncd.service        loaded active running Network Time Synchronization
+  systemd-udevd.service            loaded active running Rule-based Manager for Device Events and Files
+  upower.service                   loaded active running Daemon for power management
+  user@0.service                   loaded active running User Manager for UID 0
+  watchdog-mux.service             loaded active running Proxmox VE watchdog multiplexer
+  wazuh-agent-forward.service      loaded active running Forward Wazuh Agent 1514 to 192.168.200.14:1514
+  wazuh-api-forward.service        loaded active running Forward Wazuh API 55000 to 192.168.200.14:55000
+  wazuh-dashboard-forward.service  loaded active running Forward Wazuh Dashboard 9445 to 192.168.200.14:443
+  wazuh-enrollment-forward.service loaded active running Forward Wazuh Enrollment 1515 to 192.168.200.14:1515
+  zfs-zed.service                  loaded active running ZFS Event Daemon (zed)
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+56 loaded units listed.

@@ -1,0 +1,17 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: systemctl cat jellyfin-proxy.service
+
+# /etc/systemd/system/jellyfin-proxy.service
+[Unit]
+Description=Jellyfin TCP proxy to VM 204
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/socat TCP-LISTEN:8096,fork,reuseaddr TCP:192.168.200.24:8096
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

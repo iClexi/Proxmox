@@ -1,0 +1,25 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm config 204
+
+agent: enabled=1
+boot: order=scsi0
+ciuser: infra
+cores: 1
+cpu: host
+ide2: local-lvm:vm-204-cloudinit,media=cdrom
+ipconfig0: ip=192.168.200.24/24,gw=192.168.200.1
+memory: 1024
+meta: creation-qemu=10.1.2,ctime=1777443468
+name: jellyfin-docker
+nameserver: 1.1.1.1
+net0: virtio=BC:24:11:9F:9A:96,bridge=vmbr1
+ostype: l26
+parent: antes-debian13-2026-05-03
+scsi0: local-lvm:vm-204-disk-0,size=13G
+scsihw: virtio-scsi-pci
+serial0: socket
+smbios1: uuid=ab100880-d5a8-4559-81f5-250330b34339
+sshkeys: [REDACTED_PUBLIC_KEY]
+tags: debian-13
+vga: serial0
+vmgenid: 83e60f18-1b4c-492a-8783-a58ed5b447e0

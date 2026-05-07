@@ -1,0 +1,22 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm config 101
+
+agent: 1
+boot: order=scsi0;ide2;net0
+cores: 2
+cpu: x86-64-v2-AES
+ide2: none,media=cdrom
+memory: 4096
+meta: creation-qemu=10.1.2,ctime=1777754641
+name: true-nas
+net0: virtio=BC:24:11:7A:8B:7C,bridge=vmbr1,firewall=1
+numa: 0
+onboot: 1
+ostype: l26
+scsi0: local-lvm:vm-101-disk-0,iothread=1,serial=TRUENASBOOT001,size=16G
+scsi1: local-lvm:vm-101-disk-1,iothread=1,serial=TRUENASDATA001,size=44G
+scsihw: virtio-scsi-single
+smbios1: uuid=f9578a87-824a-4c90-abf2-0c2b3e4becf2
+sockets: 1
+tags: truenas-scale
+vmgenid: ab4ce470-ff15-4a25-bab7-7e631d00ed95

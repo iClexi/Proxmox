@@ -1,0 +1,27 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: systemctl cat portfolio.service
+
+# /etc/systemd/system/portfolio.service
+[Unit]
+Description=iClexi portfolio Next.js application
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=portfolio
+Group=portfolio
+WorkingDirectory=/opt/portfolio/app
+Environment=NODE_ENV=production
+Environment=NEXT_TELEMETRY_DISABLED=1
+ExecStart=/usr/bin/npm run start
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=full
+ReadWritePaths=/opt/portfolio/app/.next
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,18 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: systemctl cat cloudflared-portfolio.service
+
+# /etc/systemd/system/cloudflared-portfolio.service
+[Unit]
+Description=cloudflared portfolio root tunnel
+After=network-online.target portfolio.service
+Wants=network-online.target
+Requires=portfolio.service
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/cloudflared --config /etc/cloudflared/portfolio.yml --no-autoupdate tunnel run portfolio-root
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

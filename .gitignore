@@ -1,0 +1,13 @@
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.csr
+*.secret
+secrets/
+private/
+node_modules/
+*.tmp

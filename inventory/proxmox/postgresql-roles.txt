@@ -1,0 +1,11 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: sudo -u postgres psql -c \\du
+
+                                  List of roles
+     Role name      |                         Attributes                         
+--------------------+------------------------------------------------------------
+ cryptotoolbox_user | 
+ postgres           | Superuser, Create role, Create DB, Replication, Bypass RLS
+ ppt_terror_user    | 
+ ritmohub_user      | 
+

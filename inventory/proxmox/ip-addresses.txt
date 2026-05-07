@@ -1,0 +1,36 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: ip -br addr
+
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+wlp0s20f3        UP             192.168.68.112/22 2001:1308:2772:2801:a6a:c5ff:fe5f:d6e7/64 fd6a:eaa6:1e13:c1ea:a6a:c5ff:fe5f:d6e7/64 fe80::a6a:c5ff:fe5f:d6e7/64 
+vmbr0            UP             10.10.10.1/24 fe80::9023:1eff:fe3f:93fd/64 
+vmbr1            UP             192.168.200.1/24 fe80::8cd1:53ff:fe5a:9762/64 
+tap204i0         UNKNOWN        
+tap100i0         UNKNOWN        
+tap100i1         UNKNOWN        
+tap202i0         UNKNOWN        
+tap101i0         UNKNOWN        
+fwbr101i0        UP             
+fwpr101p0@fwln101i0 UP             
+fwln101i0@fwpr101p0 UP             
+tap201i0         UNKNOWN        
+tap102i0         UNKNOWN        
+fwbr102i0        UP             
+fwpr102p0@fwln102i0 UP             
+fwln102i0@fwpr102p0 UP             
+tap103i0         UNKNOWN        
+fwbr103i0        UP             
+fwpr103p0@fwln103i0 UP             
+fwln103i0@fwpr103p0 UP             
+tap104i0         UNKNOWN        
+fwbr104i0        UP             
+fwpr104p0@fwln104i0 UP             
+fwln104i0@fwpr104p0 UP             
+tap105i0         UNKNOWN        
+fwbr105i0        UP             
+fwpr105p0@fwln105i0 UP             
+fwln105i0@fwpr105p0 UP             
+tap106i0         UNKNOWN        
+fwbr106i0        UP             
+fwpr106p0@fwln106i0 UP             
+fwln106i0@fwpr106p0 UP             

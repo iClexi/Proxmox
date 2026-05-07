@@ -1,0 +1,21 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm config 100
+
+agent: 0
+bios: seabios
+boot: order=scsi0
+cores: 2
+cpu: host
+ide2: none,media=cdrom
+machine: q35
+memory: 4096
+meta: creation-qemu=10.1.2,ctime=1777415573
+name: pfsense
+net0: virtio=BC:24:11:B3:1F:6A,bridge=vmbr0
+net1: virtio=BC:24:11:FD:A3:B4,bridge=vmbr1
+ostype: other
+scsi0: local-lvm:vm-100-disk-0,size=20G
+scsihw: virtio-scsi-pci
+smbios1: uuid=c63308ba-3f07-4f8e-ba1e-38982b65cea0
+tags: pfsense
+vmgenid: ebbdc01a-6c80-417f-a50e-7f29330fce41

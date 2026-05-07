@@ -1,0 +1,18 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: sudo -u postgres psql -c \\l
+
+                                                                     List of databases
+       Name       |       Owner        | Encoding | Locale Provider |   Collate   |    Ctype    | Locale | ICU Rules |          Access privileges          
+------------------+--------------------+----------+-----------------+-------------+-------------+--------+-----------+-------------------------------------
+ cryptotoolbox_db | cryptotoolbox_user | UTF8     | libc            | en_US.UTF-8 | en_US.UTF-8 |        |           | 
+ postgres         | postgres           | UTF8     | libc            | en_US.UTF-8 | en_US.UTF-8 |        |           | 
+ ppt_terror_db    | ppt_terror_user    | UTF8     | libc            | en_US.UTF-8 | en_US.UTF-8 |        |           | =Tc/ppt_terror_user                +
+                  |                    |          |                 |             |             |        |           | ppt_terror_user=CTc/ppt_terror_user
+ ritmohub_db      | ritmohub_user      | UTF8     | libc            | en_US.UTF-8 | en_US.UTF-8 |        |           | =Tc/ritmohub_user                  +
+                  |                    |          |                 |             |             |        |           | ritmohub_user=CTc/ritmohub_user
+ template0        | postgres           | UTF8     | libc            | en_US.UTF-8 | en_US.UTF-8 |        |           | =c/postgres                        +
+                  |                    |          |                 |             |             |        |           | postgres=CTc/postgres
+ template1        | postgres           | UTF8     | libc            | en_US.UTF-8 | en_US.UTF-8 |        |           | =c/postgres                        +
+                  |                    |          |                 |             |             |        |           | postgres=CTc/postgres
+(6 rows)
+

@@ -1,0 +1,39 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: find /etc/cloudflared -maxdepth 1 -type f -name '*.yml' -o -name '*.yaml' | sort | while read -r f; do printf '## %s\n' "$f"; sed -n '1,220p' "$f"; done
+
+## /etc/cloudflared/config.yml
+tunnel: 974cda59-5ee0-4808-99ef-5a66cd632276
+credentials-file: /root/.cloudflared/974cda59-5ee0-4808-99ef-5a66cd632276.json
+
+ingress:
+  - hostname: pve.iclexi.tech
+    service: https://192.168.68.112:8006
+    originRequest:
+      noTLSVerify: true
+
+  - hostname: web.iclexi.tech
+    service: http://127.0.0.1:8080
+
+  - hostname: jellyfin.iclexi.tech
+    service: http://127.0.0.1:8096
+
+  - hostname: pbx.iclexi.tech
+    service: https://127.0.0.1:9444
+    originRequest:
+      noTLSVerify: true
+
+  - hostname: ritmohub.iclexi.tech
+    service: http://localhost:5155
+
+  - hostname: terror.iclexi.tech
+    service: http://192.168.200.30:1311
+
+  - service: http_status:404
+## /etc/cloudflared/portfolio.yml
+tunnel: ef12e405-3e22-4d74-80c9-3c26f7235e98
+credentials-file: /root/.cloudflared/ef12e405-3e22-4d74-80c9-3c26f7235e98.json
+
+ingress:
+  - hostname: iclexi.tech
+    service: http://127.0.0.1:9023
+  - service: http_status:404

@@ -1,0 +1,18 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: systemctl cat ppt-terror-proxy.service
+
+# /etc/systemd/system/ppt-terror-proxy.service
+[Unit]
+Description=PPT del Terror local forward to HA virtual IP
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/socat TCP-LISTEN:1311,bind=127.0.0.1,fork,reuseaddr TCP:192.168.200.30:1311
+Restart=always
+RestartSec=2
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

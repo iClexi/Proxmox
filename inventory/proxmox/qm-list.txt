@@ -1,0 +1,14 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: qm list
+
+      VMID NAME                 STATUS     MEM(MB)    BOOTDISK(GB) PID       
+       100 pfsense              running    4096              20.00 2743345   
+       101 true-nas             running    4096              16.00 3065066   
+       102 vpn                  running    2048              25.00 3876533   
+       103 wazuh                running    12288             50.00 3912512   
+       104 dns-01               running    1024              12.00 3926437   
+       105 proxy-01             running    2048              20.00 3926632   
+       106 minecraft            running    2048              32.00 3973637   
+       201 ha-web-master        running    1024              13.00 3246518   
+       202 ha-web-backup        running    1024              13.00 3003809   
+       204 jellyfin-docker      running    1024              13.00 1473144   

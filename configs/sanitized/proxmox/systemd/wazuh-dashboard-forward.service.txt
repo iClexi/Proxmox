@@ -1,0 +1,16 @@
+# Captured: 2026-05-07T00:31:08Z
+# Command: systemctl cat wazuh-dashboard-forward.service
+
+# /etc/systemd/system/wazuh-dashboard-forward.service
+[Unit]
+Description=Forward Wazuh Dashboard 9445 to 192.168.200.14:443
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/socat TCP-LISTEN:9445,fork,reuseaddr TCP:192.168.200.14:443
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
