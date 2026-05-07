@@ -33,8 +33,8 @@ ingress:
 
   - service: http_status:404
 ## /etc/cloudflared/portfolio.yml
-tunnel: ef12e405-3e22-4d74-80c9-3c26f7235e98
-credentials-file: /root/.cloudflared/ef12e405-3e22-4d74-80c9-3c26f7235e98.json
+tunnel: e**************************
+credentials-file: /root/.cloudflared/e*********************.json
 
 ingress:
   - hostname: iclexi.tech
