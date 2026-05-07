@@ -1,4 +1,4 @@
-# Captured: 2026-05-07T00:31:08Z
+# Captured: 2026-05-07T00:38:21Z
 # Command: systemctl cat cloudflared.service
 
 # /etc/systemd/system/cloudflared.service
@@ -8,6 +8,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
+EnvironmentFile=/etc/cloudflared/token.env
 TimeoutStartSec=15
 Type=notify
 ExecStart=/usr/bin/cloudflared --no-autoupdate tunnel run --token [REDACTED]

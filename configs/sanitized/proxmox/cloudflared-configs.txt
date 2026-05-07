@@ -1,4 +1,4 @@
-# Captured: 2026-05-07T00:31:08Z
+# Captured: 2026-05-07T00:38:21Z
 # Command: find /etc/cloudflared -maxdepth 1 -type f -name '*.yml' -o -name '*.yaml' | sort | while read -r f; do printf '## %s\n' "$f"; sed -n '1,220p' "$f"; done
 
 ## /etc/cloudflared/config.yml

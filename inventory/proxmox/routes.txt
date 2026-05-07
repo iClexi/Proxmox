@@ -1,4 +1,4 @@
-# Captured: 2026-05-07T00:31:08Z
+# Captured: 2026-05-07T00:38:21Z
 # Command: ip route
 
 default via 192.168.68.1 dev wlp0s20f3 
