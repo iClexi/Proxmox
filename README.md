@@ -10,12 +10,19 @@ Infraestructura personal de virtualización orientada a ciberseguridad, redes, s
 
 <div align="center">
 
-![Proxmox](https://img.shields.io/badge/Proxmox-0f172a?style=for-the-badge&logo=proxmox&logoColor=E57000)
-![Linux](https://img.shields.io/badge/Linux-111827?style=for-the-badge&logo=linux&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell-1f2937?style=for-the-badge&logo=gnubash&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare_Tunnel-0f172a?style=for-the-badge&logo=cloudflare&logoColor=F38020)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-111827?style=for-the-badge&logo=postgresql&logoColor=4169E1)
-![Security](https://img.shields.io/badge/Security_Documented-020617?style=for-the-badge&logo=securityscorecard&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=ffffff&labelColor=1f2937)
+![Linux](https://img.shields.io/badge/Linux-facc15?style=for-the-badge&logo=linux&logoColor=111827&labelColor=020617)
+![Debian](https://img.shields.io/badge/Debian-a81d33?style=for-the-badge&logo=debian&logoColor=ffffff&labelColor=2a0f18)
+![Shell](https://img.shields.io/badge/Shell-22c55e?style=for-the-badge&logo=gnubash&logoColor=ffffff&labelColor=052e16)
+![Cloudflare Tunnel](https://img.shields.io/badge/Cloudflare_Tunnel-f97316?style=for-the-badge&logo=cloudflare&logoColor=ffffff&labelColor=431407)
+![Docker](https://img.shields.io/badge/Docker-0ea5e9?style=for-the-badge&logo=docker&logoColor=ffffff&labelColor=082f49)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-3b82f6?style=for-the-badge&logo=postgresql&logoColor=ffffff&labelColor=172554)
+![pfSense](https://img.shields.io/badge/pfSense-2563eb?style=for-the-badge&logo=pfsense&logoColor=ffffff&labelColor=0f172a)
+![TrueNAS](https://img.shields.io/badge/TrueNAS-0891b2?style=for-the-badge&logo=truenas&logoColor=ffffff&labelColor=083344)
+![Wazuh](https://img.shields.io/badge/Wazuh-6366f1?style=for-the-badge&logo=wazuh&logoColor=ffffff&labelColor=1e1b4b)
+![Networking](https://img.shields.io/badge/Networking-14b8a6?style=for-the-badge&logo=cisco&logoColor=ffffff&labelColor=042f2e)
+![Security](https://img.shields.io/badge/Security_Documented-10b981?style=for-the-badge&logo=securityscorecard&logoColor=ffffff&labelColor=064e3b)
+![Homelab](https://img.shields.io/badge/Homelab_Ready-8b5cf6?style=for-the-badge&logo=serverfault&logoColor=ffffff&labelColor=2e1065)
 
 </div>
 
